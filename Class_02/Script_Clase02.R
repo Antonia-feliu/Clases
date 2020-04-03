@@ -14,27 +14,32 @@
 
 # Creación de Objetos
 
-x<-NULL
-y<-c(TRUE,FALSE)
-as.numeric(y)
+x<-NULL #objeto en blanco listo para guardar cosas.
+y<-c(TRUE,FALSE) #dos elementos en una función c. Elementos de formato lógico. 
+as.numeric(y) #pone el valor 1 para true y 0 para false.
 
 A<-1
 years<-2010:2020
-tiktoc<-c("Que", "linda", "te ves", "limpiando", "Esperancita")
-m1<-matrix(1:4,2,2)
-a1<-array(1:12,dim = c(2,2,3))
-d1<-data.frame(m1)
-data("quakes") # promise
+tiktoc<-c("Que", "linda", "te ves", "limpiando", "Esperancita", "4")
+
+
+m1<-matrix(1:4,2,2) #tiene dos dimensiones.
+
+
+
+a1<-array(1:12,dim = c(2,2,3)) #objeto que tiene 3 dimensiones. Tiene filas, columnas y profundidades.
+d1<-data.frame(m1) #permite tener datos numericos, floats, int, etc.. muy complejo.Es una función. Data.frame se parece a una matriz, dos dimensiones, pero se pueden guardar más que números. 
+data("quakes") # promise de que voy a utilizar estos datos. 
 d1<-data.frame(quakes)
 
 ls()
-l1<-list(A=A,years,tiktoc,m1)
+l1<-list(A=A,years,tiktoc,m1) #
 
 # Manipulación de Objetos
 ls()
 
-class(A)
-typeof(A)
+class(A) #que clase del objeto es. 
+typeof(A) #de que tipo son los elementos dentro del objeto, y como están guardados estos elementos. 
 
 length(years)
 dim(m1)
